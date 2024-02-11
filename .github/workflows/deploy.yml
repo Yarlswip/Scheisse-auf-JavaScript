@@ -1,0 +1,16 @@
+name: Deploy changes
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+    - name: update
+      run: |
+        echo "::add-mask::${{ secrets.UPDATE_KEY }}"
+        curl -X POST -d "site=y4r3-scheisse&key=${{ secrets.UPDATE_KEY }}" https://l3p3.de/svr/site-update.txt
