@@ -11,7 +11,7 @@ function rechts() {
   objekt.style.left = posX + "px";
 }
 
-ocobjekt.style
+objekt.style
 document.addEventListener("keydown",
                           function(event) {
                             if (event.key === "d") {
