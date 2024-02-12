@@ -3,7 +3,7 @@ name: Deploy changes
 on:
   push:
     branches:
-      - master
+      - main
   workflow_dispatch:
 
 jobs:
