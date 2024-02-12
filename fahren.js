@@ -1,22 +1,21 @@
-var objekt =
- document.getElementById("gpanz")
+var objekt = document.getElementById("gpanz")
+var posX = 0 
 
 function links() {
-  posX -= 10;
-  Objekt.style.left = posX + "px";
+	posX -= 10;
+	objekt.style.left = posX + "px";
 }
 
 function rechts() {
-  posX += 10;
-  objekt.style.left = posX + "px";
+	posX += 10;
+	objekt.style.left = posX + "px";
 }
 
-objekt.style
 document.addEventListener("keydown",
-                          function(event) {
-                            if (event.key === "d") {
-                              links();
-                            } else if (event.key === "a") {
-                              rechts();
-                            }
-                          });
+function(event) {
+	if (event.key === "a") {
+		links();
+	} else if (event.key === "d") {
+		rechts();
+	}
+});
